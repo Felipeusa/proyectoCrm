@@ -1,0 +1,21 @@
+<h1>Tabla del Componente Son</h1>
+
+<h4>{{tituloTabla}}</h4>
+
+<hr  />
+<table class="table table-bordered border-primary, table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (user of usuarios; track $index) {
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+      </tr> 
+    }
+    </tbody>
+  </table>

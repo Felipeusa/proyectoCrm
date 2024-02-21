@@ -1,0 +1,19 @@
+.tiutlo{
+    font-size: 18 px;
+    color:blue;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cont{
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2em;
+    border: 2px black solid;
+
+}
+
+#cont1{
+    background-color: brown;
+}

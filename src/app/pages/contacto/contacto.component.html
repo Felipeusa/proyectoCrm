@@ -1,0 +1,29 @@
+<form [formGroup]="contactoForm" (submit)="enviarContacto()">
+    <div>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" formControlName="nombre" />
+    </div>
+    <div><select class="form-select" aria-label="Default select example">
+      <option selected>Tipo de documento</option>
+      <option value="1">Cedula</option>
+      <option value="2">Lalo</option>
+      <option value="3">Three</option>
+      <input type="text" id="msg2" formControlName="mensaje2" />
+    </select></div>
+    <div>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" formControlName="email" />
+    </div>
+    <div>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" formControlName="mensaje"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit" [disabled]="!contactoForm.valid">Envia tu mensaje</button>
+    </div>
+  </form>
+
+  <p>Nombre: {{ contactoForm.value.nombre }}</p>
+  <p>Email: {{ contactoForm.value.email }}</p>
+  <p>Mensaje: {{ contactoForm.value.mensaje }}</p>
+  
